@@ -23,8 +23,8 @@ import { PrismaPg } from '@prisma/adapter-pg'
 import { parse } from 'superjson'
 import { vi } from 'vitest'
 
-import { PrismaClient } from '@acme/db/client'
-import { kyselyPrismaExtension } from '@acme/db/extensions'
+import { PrismaClient } from '@urram/db/client'
+import { kyselyPrismaExtension } from '@urram/db/extensions'
 
 import { CONTAINER_INFORMATION_SCHEMA } from '../common'
 
@@ -92,7 +92,7 @@ const db = new PrismaClient({
   adapter: new PrismaPg({ connectionString }),
 }).$extends(kyselyPrismaExtension)
 
-vi.mock('@acme/db', () => ({
+vi.mock('@urram/db', () => ({
   db,
 }))
 

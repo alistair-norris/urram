@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite'
 
-import { withChromaticModes } from '@acme/storybook-config'
+import { withChromaticModes } from '@urram/storybook-config'
 
 import { LandingPageComponent } from '~/app/(public)/_components/landing-page/_page'
 

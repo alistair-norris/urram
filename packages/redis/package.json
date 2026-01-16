@@ -1,5 +1,5 @@
 {
-  "name": "@acme/redis",
+  "name": "@urram/redis",
   "private": true,
   "type": "module",
   "exports": {
@@ -21,15 +21,15 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
     "@types/node": "catalog:",
+    "@urram/eslint-config": "workspace:*",
+    "@urram/prettier-config": "workspace:*",
+    "@urram/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config",
+  "prettier": "@urram/prettier-config",
   "dependencies": {
     "@t3-oss/env-core": "catalog:t3-env",
     "ioredis": "^5.8.2",

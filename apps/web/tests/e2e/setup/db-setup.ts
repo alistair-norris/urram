@@ -10,7 +10,7 @@ import {
   setup as setupContainers,
 } from '~tests/common'
 
-import { PrismaClient } from '@acme/db/client'
+import { PrismaClient } from '@urram/db/client'
 
 type DatabaseContainer = Awaited<ReturnType<typeof startDatabase>>
 

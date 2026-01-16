@@ -3,7 +3,7 @@ import { AppDecorator } from '~storybook/decorators'
 import { authHandlers } from '~tests/msw/handlers/auth'
 import { expect, waitFor } from 'storybook/test'
 
-import { withChromaticModes } from '@acme/storybook-config'
+import { withChromaticModes } from '@urram/storybook-config'
 
 import { SignInPageComponent } from '~/app/(public)/sign-in/_components/_page'
 

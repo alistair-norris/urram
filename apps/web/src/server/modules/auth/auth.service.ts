@@ -2,8 +2,8 @@ import { TRPCError } from '@trpc/server'
 import { add } from 'date-fns/add'
 import { format } from 'date-fns/format'
 
-import { db } from '@acme/db'
-import { Prisma } from '@acme/db/client'
+import { db } from '@urram/db'
+import { Prisma } from '@urram/db/client'
 
 import { env } from '~/env'
 import { ssCreatePkceChallenge } from '~/lib/pkce/server-pkce'

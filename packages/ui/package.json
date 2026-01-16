@@ -1,5 +1,5 @@
 {
-  "name": "@acme/ui",
+  "name": "@urram/ui",
   "private": true,
   "type": "module",
   "exports": {
@@ -30,10 +30,10 @@
     "tailwind-variants": "^3.1.1"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
     "@types/react": "catalog:react",
+    "@urram/eslint-config": "workspace:*",
+    "@urram/prettier-config": "workspace:*",
+    "@urram/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "react": "catalog:react",
@@ -44,5 +44,5 @@
     "react": "catalog:react",
     "zod": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@urram/prettier-config"
 }

@@ -11,8 +11,8 @@
     },
     "vercel-build": {
       "dependsOn": [
-        "@acme/db#generate",
-        "@acme/db#migrate:deploy",
+        "@urram/db#generate",
+        "@urram/db#migrate:deploy",
         "^vercel-build"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
@@ -54,13 +54,13 @@
       "env": ["DATABASE_URL"]
     },
     "test": {
-      "dependsOn": ["@acme/db#generate"],
+      "dependsOn": ["@urram/db#generate"],
       "cache": false,
       "persistent": true,
       "interactive": true
     },
     "test:ci": {
-      "dependsOn": ["@acme/db#generate"]
+      "dependsOn": ["@urram/db#generate"]
     }
   },
   "globalEnv": [

@@ -1,7 +1,7 @@
 import { resetTables } from '~tests/db/utils'
 import { beforeEach, describe, expect, it } from 'vitest'
 
-import { db } from '@acme/db'
+import { db } from '@urram/db'
 
 import { AccountProvider } from '../../auth/auth.constants'
 import { getUserById, loginUserByEmail } from '../user.service'

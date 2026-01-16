@@ -1,5 +1,5 @@
 {
-  "name": "@acme/storybook-config",
+  "name": "@urram/storybook-config",
   "private": true,
   "type": "module",
   "exports": {
@@ -12,12 +12,12 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@urram/eslint-config": "workspace:*",
+    "@urram/prettier-config": "workspace:*",
+    "@urram/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@urram/prettier-config"
 }

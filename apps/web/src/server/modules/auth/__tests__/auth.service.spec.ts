@@ -4,7 +4,7 @@ import { resetTables } from '~tests/db/utils'
 import { add } from 'date-fns/add'
 import { mock } from 'vitest-mock-extended'
 
-import { db } from '@acme/db'
+import { db } from '@urram/db'
 
 import {
   ssCreatePkceChallenge,

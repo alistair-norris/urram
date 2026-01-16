@@ -12,7 +12,7 @@ import { RateLimiterRes } from 'rate-limiter-flexible'
 import superjson from 'superjson'
 import z, { ZodError } from 'zod'
 
-import type { Logger, ScopedLogger } from '@acme/logging'
+import type { Logger, ScopedLogger } from '@urram/logging'
 
 import type { RateLimiterConfig } from '../modules/rate-limit/types'
 import { env } from '~/env'

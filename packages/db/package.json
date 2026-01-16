@@ -1,5 +1,5 @@
 {
-  "name": "@acme/db",
+  "name": "@urram/db",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -61,11 +61,11 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "catalog:",
+    "@urram/eslint-config": "workspace:*",
+    "@urram/prettier-config": "workspace:*",
+    "@urram/tsconfig": "workspace:*",
     "dotenv-cli": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
@@ -74,5 +74,5 @@
     "prisma-zod-generator": "^2.1.2",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@urram/prettier-config"
 }

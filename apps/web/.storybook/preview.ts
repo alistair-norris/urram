@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/nextjs-vite'
 import { initialize, mswLoader } from 'msw-storybook-addon'
 
-import { viewport } from '@acme/storybook-config'
+import { viewport } from '@urram/storybook-config'
 
 import { ibmPlexMono, inter } from '~/lib/fonts'
 

@@ -9,12 +9,12 @@ await jiti.import('./src/env')
 const config = {
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: [
-    '@acme/db',
-    '@acme/ui',
-    '@acme/validators',
-    '@acme/logging',
-    '@acme/redis',
-    '@acme/common',
+    '@urram/db',
+    '@urram/ui',
+    '@urram/validators',
+    '@urram/logging',
+    '@urram/redis',
+    '@urram/common',
   ],
 
   reactCompiler: true,

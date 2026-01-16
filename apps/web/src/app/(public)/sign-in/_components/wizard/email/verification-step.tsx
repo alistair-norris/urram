@@ -9,8 +9,8 @@ import { useMutation } from '@tanstack/react-query'
 import { Controller, useForm } from 'react-hook-form'
 import { useInterval } from 'usehooks-ts'
 
-import { Infobox } from '@acme/ui/infobox'
-import { TextField } from '@acme/ui/text-field'
+import { Infobox } from '@urram/ui/infobox'
+import { TextField } from '@urram/ui/text-field'
 
 import { useTRPC } from '~/trpc/react'
 import { emailVerifyOtpSchema } from '~/validators/auth'

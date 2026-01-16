@@ -9,7 +9,7 @@
 
 import { parse } from 'superjson'
 
-import { Redis } from '@acme/redis/testing'
+import { Redis } from '@urram/redis/testing'
 
 import { CONTAINER_INFORMATION_SCHEMA } from '../common'
 
@@ -31,6 +31,6 @@ const redisUrl = `redis://${redisHost}:${redisPort}`
 
 export const redis = new Redis(redisUrl)
 
-vi.mock('@acme/redis', () => ({
+vi.mock('@urram/redis', () => ({
   redis,
 }))

@@ -5,7 +5,7 @@ import {
   RateLimiterRedis,
 } from 'rate-limiter-flexible'
 
-import { redis } from '@acme/redis'
+import { redis } from '@urram/redis'
 
 import type { RateLimiterConfig } from '~/server/modules/rate-limit/types'
 

@@ -1,6 +1,6 @@
 import type { IronSession } from 'iron-session'
 
-import { createBaseLogger } from '@acme/logging'
+import { createBaseLogger } from '@urram/logging'
 
 import type { SessionData } from '~/server/session'
 import { appRouter } from '~/server/api/root'

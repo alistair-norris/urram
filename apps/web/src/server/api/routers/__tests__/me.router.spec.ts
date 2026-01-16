@@ -2,7 +2,7 @@ import { TRPCError } from '@trpc/server'
 import { resetTables } from '~tests/db/utils'
 import { createTestCaller, createTestContext } from '~tests/trpc'
 
-import { db } from '@acme/db'
+import { db } from '@urram/db'
 
 describe('meRouter', () => {
   beforeEach(async () => {

@@ -1,6 +1,6 @@
 import { parseOneAddress } from 'email-addresses'
 
-import { db } from '@acme/db'
+import { db } from '@urram/db'
 
 import { AccountProvider } from '../auth/auth.constants'
 import { defaultUserSelect } from './user.select'

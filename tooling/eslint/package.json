@@ -1,5 +1,5 @@
 {
-  "name": "@acme/eslint-config",
+  "name": "@urram/eslint-config",
   "private": true,
   "type": "module",
   "exports": {
@@ -26,12 +26,12 @@
     "typescript-eslint": "^8.46.4"
   },
   "devDependencies": {
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
     "@types/node": "catalog:",
+    "@urram/prettier-config": "workspace:*",
+    "@urram/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@urram/prettier-config"
 }

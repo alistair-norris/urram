@@ -1,4 +1,4 @@
-import { NotFoundSvg } from '@acme/ui/svgs'
+import { NotFoundSvg } from '@urram/ui/svgs'
 
 import { ErrorCard } from './error-card'
 

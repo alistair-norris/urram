@@ -4,7 +4,7 @@ export async function register() {
     // eslint-disable-next-line no-restricted-properties
     if (process.env.DD_SERVICE !== undefined) {
       // setup datadog tracing
-      const { initTracer } = await import('@acme/logging/tracer')
+      const { initTracer } = await import('@urram/logging/tracer')
       // eslint-disable-next-line no-restricted-properties
       initTracer({ service: process.env.DD_SERVICE })
     }

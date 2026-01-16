@@ -3,4 +3,4 @@
 @import '@opengovsg/oui-theme/tailwind.css';
 @source '../../../../node_modules/@opengovsg/oui-theme';
 
-@import '@acme/tailwind-config/theme';
+@import '@urram/tailwind-config/theme';

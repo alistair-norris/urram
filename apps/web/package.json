@@ -1,5 +1,5 @@
 {
-  "name": "@acme/web",
+  "name": "@urram/web",
   "private": true,
   "type": "module",
   "scripts": {
@@ -23,12 +23,6 @@
     "build-storybook": "SKIP_ENV_VALIDATION=1 storybook build"
   },
   "dependencies": {
-    "@acme/common": "workspace:*",
-    "@acme/db": "workspace:*",
-    "@acme/logging": "workspace:*",
-    "@acme/redis": "workspace:*",
-    "@acme/ui": "workspace:*",
-    "@acme/validators": "workspace:*",
     "@hookform/resolvers": "catalog:",
     "@opengovsg/oui": "catalog:oui",
     "@opengovsg/oui-theme": "catalog:oui",
@@ -37,6 +31,12 @@
     "@trpc/client": "catalog:trpc",
     "@trpc/server": "catalog:trpc",
     "@trpc/tanstack-react-query": "catalog:trpc",
+    "@urram/common": "workspace:*",
+    "@urram/db": "workspace:*",
+    "@urram/logging": "workspace:*",
+    "@urram/redis": "workspace:*",
+    "@urram/ui": "workspace:*",
+    "@urram/validators": "workspace:*",
     "babel-plugin-react-compiler": "^1.0.0",
     "date-fns": "^4.1.0",
     "email-addresses": "^5.0.0",
@@ -58,11 +58,6 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/storybook-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
     "@playwright/test": "catalog:playwright",
     "@storybook/addon-a11y": "catalog:storybook10",
     "@storybook/addon-docs": "catalog:storybook10",
@@ -74,6 +69,11 @@
     "@types/node": "catalog:",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
+    "@urram/eslint-config": "workspace:*",
+    "@urram/prettier-config": "workspace:*",
+    "@urram/storybook-config": "workspace:*",
+    "@urram/tailwind-config": "workspace:*",
+    "@urram/tsconfig": "workspace:*",
     "@vitest/browser": "catalog:vitest",
     "@vitest/browser-playwright": "catalog:vitest",
     "@vitest/coverage-v8": "catalog:vitest",
@@ -97,7 +97,7 @@
     "vitest": "catalog:vitest",
     "vitest-mock-extended": "^3.1.0"
   },
-  "prettier": "@acme/prettier-config",
+  "prettier": "@urram/prettier-config",
   "msw": {
     "workerDirectory": [
       "public"

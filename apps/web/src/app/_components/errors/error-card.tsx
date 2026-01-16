@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { Button } from '@opengovsg/oui'
 import { cn } from '@opengovsg/oui-theme'
 
-import { ErrorSvg } from '@acme/ui/svgs'
+import { ErrorSvg } from '@urram/ui/svgs'
 
 interface ErrorCardProps {
   fullscreen?: boolean

@@ -1,7 +1,7 @@
-import baseConfig, { restrictEnvAccess } from '@acme/eslint-config/base'
-import nextjsConfig from '@acme/eslint-config/nextjs'
-import reactConfig from '@acme/eslint-config/react'
-import storybookConfig from '@acme/eslint-config/storybook'
+import baseConfig, { restrictEnvAccess } from '@urram/eslint-config/base'
+import nextjsConfig from '@urram/eslint-config/nextjs'
+import reactConfig from '@urram/eslint-config/react'
+import storybookConfig from '@urram/eslint-config/storybook'
 
 export default [
   {

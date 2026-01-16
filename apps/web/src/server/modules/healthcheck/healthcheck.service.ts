@@ -1,4 +1,4 @@
-import { db } from '@acme/db'
+import { db } from '@urram/db'
 
 export const healthcheck = async () => {
   try {
