@@ -1,12 +1,11 @@
-import { GovtBanner } from '@opengovsg/oui/govt-banner'
-
 import type { DynamicLayoutProps } from '~/types/nextjs'
+import { HackathonBanner } from '../_components/hackathon-banner'
 import { VersionCheckWrapper } from '../_components/version-check-wrapper'
 
 export default function PublicLayout({ children }: DynamicLayoutProps) {
   return (
-    <main className="flex min-h-dvh flex-col">
-      <GovtBanner />
+    <main className="mx-auto flex min-h-dvh max-w-[430px] flex-col">
+      <HackathonBanner />
       <VersionCheckWrapper />
       {children}
     </main>

@@ -1,5 +1,3 @@
-import { parseOneAddress } from 'email-addresses'
-
 import { db } from '@urram/db'
 
 import { createPasswordHash, isValidPassword } from '../auth/auth.utils'
@@ -51,7 +49,7 @@ export const loginUser = async (email: string, password: string) => {
   })
 
   // Remove passwordHash before returning user
-  const { passwordHash, ...userWithoutPassword } = user
+  const { passwordHash: _, ...userWithoutPassword } = user
   return userWithoutPassword
 }
 

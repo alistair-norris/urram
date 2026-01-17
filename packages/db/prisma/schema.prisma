@@ -45,4 +45,48 @@ model User {
   dateOfBirth DateTime? @db.Timestamptz(3)
 
   lastLogin DateTime? @db.Timestamptz(3)
+
+  // relations
+  dailyLogs DailyLog[]
+}
+
+model DailyLog {
+  id     String   @id @default(cuid(2))
+  userId String
+  user   User     @relation(fields: [userId], references: [id])
+  date   DateTime @db.Timestamptz(3)
+
+  // relations
+  logs Log[]
+
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+
+  @@unique([userId, date])
+}
+
+enum LogType {
+  PAIN
+  TIREDNESS
+  DROWSINESS
+  NAUSEA
+  LACK_OF_APPETITE
+  SHORTNESS_OF_BREATH
+  DEPRESSION
+  ANXIETY
+  WELLBEING
+  OTHERS
+}
+
+model Log {
+  id         String   @id @default(cuid(2))
+  dailyLog   DailyLog @relation(fields: [dailyLogId], references: [id])
+  dailyLogId String
+
+  logType   LogType
+  logValue  Int?
+  extraData Json? // keeping as json for now for flexibility {text, logName etc.}
+
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
 }

@@ -8,9 +8,9 @@ import { SignUpForm } from './sign-up-form'
 
 export const SignUpPageComponent = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-200">
-      <div className="rounded bg-white p-8 shadow-lg">
-        <div className="flex h-full w-full flex-col gap-4 max-lg:px-4 md:col-span-6 md:col-start-4">
+    <div className="flex h-screen items-center justify-center">
+      <div className="rounded bg-white p-8">
+        <div className="flex h-full w-full flex-col gap-4">
           <h2 className="prose-h3 text-base-content-brand text-center font-semibold">
             {/* Recommend max 2 lines of text here, or add logo */}
             {env.NEXT_PUBLIC_APP_NAME}

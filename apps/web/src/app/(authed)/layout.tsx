@@ -4,9 +4,9 @@ import type { DynamicLayoutProps } from '~/types/nextjs'
 import { LOGIN_ROUTE } from '~/constants'
 import { getSession } from '~/server/session'
 import { HydrateClient, prefetch, trpc } from '~/trpc/server'
-import { EnvBanner } from '../_components/env-banner'
+import { HackathonBanner } from '../_components/hackathon-banner'
 import { VersionCheckWrapper } from '../_components/version-check-wrapper'
-import { AuthedNavbar } from './_components/authed-navbar'
+import { BottomNavbar } from './_components/bottom-navbar'
 
 export default async function AuthedLayout({ children }: DynamicLayoutProps) {
   // DO NOT SKIP AUTHENTICATION CHECKS IN YOUR PROCEDURES.
@@ -21,13 +21,13 @@ export default async function AuthedLayout({ children }: DynamicLayoutProps) {
 
   return (
     <HydrateClient>
-      <main className="flex min-h-dvh flex-col">
-        <EnvBanner />
+      <main className="mx-auto flex min-h-dvh max-w-[430px] flex-col">
+        <HackathonBanner />
         <VersionCheckWrapper />
-        <AuthedNavbar />
         <div className="container mx-auto flex flex-col gap-4 p-4">
           {children}
         </div>
+        <BottomNavbar />
       </main>
     </HydrateClient>
   )

@@ -39,6 +39,7 @@
     "@urram/validators": "workspace:*",
     "babel-plugin-react-compiler": "^1.0.0",
     "date-fns": "^4.1.0",
+    "dayjs": "^1.11.19",
     "email-addresses": "^5.0.0",
     "iron-session": "^8.0.4",
     "lodash-es": "^4.17.22",

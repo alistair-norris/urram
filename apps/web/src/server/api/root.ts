@@ -2,6 +2,7 @@ import { meRouter } from '~/server/api/routers/me.router'
 import { createTRPCRouter, publicProcedure } from '~/server/api/trpc'
 import { healthcheck } from '../modules/healthcheck/healthcheck.service'
 import { authRouter } from './routers/auth/auth.router'
+import { dailyLogRouter } from './routers/daily-log.router'
 
 /**
  * This is the primary router for your server.
@@ -21,6 +22,7 @@ export const appRouter = createTRPCRouter({
     .query(() => healthcheck()),
   me: meRouter,
   auth: authRouter,
+  dailyLog: dailyLogRouter,
 })
 
 // export type definition of API
