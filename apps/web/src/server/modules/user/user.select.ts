@@ -8,6 +8,5 @@ import type { Prisma } from '@urram/db/client'
 export const defaultUserSelect = {
   id: true,
   email: true,
-  image: true,
   name: true,
 } satisfies Prisma.UserSelect

@@ -29,31 +29,20 @@ generator kysely {
   readOnlyIds  = true
 }
 
-model VerificationToken {
-  identifier String   @id
-  token      String
-  attempts   Int      @default(0)
-  issuedAt   DateTime @default(now()) @db.Timestamptz(3)
+enum Gender {
+  MALE
+  FEMALE
 }
 
 model User {
-  id       String    @id @default(cuid(2))
-  name     String?
-  email    String    @unique
-  image    String?
-  accounts Account[]
+  id String @id @default(cuid(2))
+
+  email        String @unique
+  passwordHash String
+
+  name        String?
+  gender      Gender?
+  dateOfBirth DateTime? @db.Timestamptz(3)
 
   lastLogin DateTime? @db.Timestamptz(3)
-}
-
-model Account {
-  id                String @id @default(cuid(2))
-  provider          String
-  providerAccountId String
-
-  userId String @map("user_id")
-  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([provider, providerAccountId])
-  @@index([userId])
 }

@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Link } from 'react-aria-components'
 
 import { env } from '~/env'
-import { SignInForm } from './sign-in-form'
+import { SignUpForm } from './sign-up-form'
 
-export const SignInPageComponent = () => {
+export const SignUpPageComponent = () => {
   return (
     <div className="flex h-screen items-center justify-center bg-gray-200">
       <div className="rounded bg-white p-8 shadow-lg">
@@ -15,13 +15,7 @@ export const SignInPageComponent = () => {
             {/* Recommend max 2 lines of text here, or add logo */}
             {env.NEXT_PUBLIC_APP_NAME}
           </h2>
-          <SignInForm />
-          <div className="prose-caption-3 mt-4 text-center text-gray-500">
-            Don't have an account?{' '}
-            <Link href="/sign-up" className="text-gray-700 underline">
-              Sign up
-            </Link>
-          </div>
+          <SignUpForm />
           <div className="prose-caption-3 my-12 flex items-center whitespace-pre">
             Built by{' '}
             <Link

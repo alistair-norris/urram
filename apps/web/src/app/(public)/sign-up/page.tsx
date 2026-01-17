@@ -2,7 +2,7 @@ import { redirect } from 'next/navigation'
 
 import { DASHBOARD_ROUTE } from '~/constants'
 import { getSession } from '~/server/session'
-import { SignInPageComponent } from './_components/_page'
+import { SignUpPageComponent } from './_components/_page'
 
 export default async function SignInPage() {
   const session = await getSession()
@@ -11,5 +11,5 @@ export default async function SignInPage() {
     redirect(DASHBOARD_ROUTE)
   }
 
-  return <SignInPageComponent />
+  return <SignUpPageComponent />
 }

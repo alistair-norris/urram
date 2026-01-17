@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { govEmailSchema } from './email'
+import { emailSchema, govEmailSchema } from './email'
 
 export const OTP_LENGTH = 6
 export const OTP_PREFIX_LENGTH = 3
@@ -38,4 +38,9 @@ export const emailVerifyOtpSchema = z.object({
     .trim()
     .min(1, 'OTP is required.')
     .length(OTP_LENGTH, `Please enter a ${OTP_LENGTH} character OTP.`),
+})
+
+export const signInSchema = z.object({
+  email: emailSchema,
+  password: z.string().min(8, 'Password must be at least 8 characters long.'),
 })

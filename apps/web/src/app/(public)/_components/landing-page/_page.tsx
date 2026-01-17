@@ -7,7 +7,7 @@ import { BiRightArrowAlt } from 'react-icons/bi'
 import { LinkButton } from '@urram/ui/link-button'
 import { RestrictedFooter } from '@urram/ui/restricted-footer'
 
-import { AUTHED_ROOT_ROUTE, LOGIN_ROUTE } from '~/constants'
+import { DASHBOARD_ROUTE, LOGIN_ROUTE } from '~/constants'
 import { FeatureItem } from './feature-item'
 import { LandingPageHeader } from './header'
 import { LandingSection, SectionBody, SectionHeader } from './section'
@@ -24,7 +24,7 @@ export const LandingPageComponent = ({
   isAuthed,
   appName,
 }: LandingPageComponentProps) => {
-  const ctaLink = isAuthed ? AUTHED_ROOT_ROUTE : LOGIN_ROUTE
+  const ctaLink = isAuthed ? DASHBOARD_ROUTE : LOGIN_ROUTE
 
   return (
     <div className="flex flex-1 flex-col">
