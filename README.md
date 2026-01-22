@@ -75,7 +75,7 @@ grep -rl '@acme' --exclude='*.md' --exclude-dir='.git' --exclude-dir='node_modul
 grep -rl 'Starter Kit' --exclude='*.md' --exclude-dir='.git' --exclude-dir='node_modules' . | xargs sed -i '' 's/Starter Kit/<your_project_name>/g'
 ```
 
-Then, follow the instructions instructions to get started.
+Then, follow the instructions to get started.
 
 ### Using GitHub Codespaces
 
